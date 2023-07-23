@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Survey</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>
+        <input="id">Drinking Survey</input>
+    </h1>
+    <p>
+        <id="description">Thank you for taking the time to fill out this survey.
+    </p>
+    <div class="input">
+        <form method="post" action="">
+        <fieldset name="user-info">
+            <label for="full-name">Name<input id="full-name" type="text" placeholder="full name" required></label>
+            <label for="email">Email<input id="email" name="email" type="email" placeholder="email"></label>
+            <label for="number">Number<input id="number" name="number" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="phone number" maxlength="11" minlength="10"></label>
+        </fieldset>
+
+        <fieldset>
+            <label for="age">What is your age?
+                <select name="age" id="age">
+                    <option value="">(select one)</option>
+                    <option value="21-25">21-25</option>
+                    <option value="26-30">26-30</option>
+                    <option value="31-40">31-40</option>
+                    <option value="41-50">41-50</option>
+                    <option value=">50">>50</option>
+                </select>
+            </label>
+            <label for="gender">Are you?
+                <select name="gender" id="gender">
+                    <option value="">(select one)</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </label>
+            <label for="marital status">Marital Status
+                <select name="marital status" id="marital status">
+                    <option value="">(select one)</option>
+                    <option value="married">Married</option>
+                    <option value="single">Single</option>
+                    <option value="separated">Separated</option>
+                    <option value="divorced">Divorced</option>
+                    <option value="widowed">Widowed</option>
+                    <option value="it's complicated">It's complicated</option>
+                </select>
+            </label>
+        
+            <label>What is your favorite drink?
+                <select name="favorite?" id="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="red wine">Red Wine</option>
+                    <option value="white wine">White Wine</option>
+                    <option value="Champagne">Champage</option>
+                    <option value="Beer">Beer</option>
+                    <option value="Liquor">Liquor</option>
+                    <option value="I stick to soda">I stick to soda</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset >
+            <h3>How often do you drink?</h3>
+                <label class="container">I enjoy drinking daily <input type="radio" id="daily" name="radio"><span class="checkmark"></span></label>
+                <label class="container">I drink a few times a week <input type="radio" id="few times" name="radio"><span class="checkmark"></span></label>
+                <label class="container">I drink a few times a month <input type="radio" id="monthly" name="radio"><span class="checkmark"></span></label>
+                <label class="container">I drink socially or ocassionally<input type="radio" id="socially" name="radio"><span class="checkmark"></span></label>
+                <label class="container">I do not drink<input type="radio" id="never" name="radio"><span class="checkmark"></span></label>
+        </fieldset>
+       <fieldset>
+            <h3>Where do you normally drink?</h3>
+            <label class="container">Home <input type="radio" id="home" name="radio2"><span class="checkmark"></span></label>
+            <label class="container">Bar/Restaurant <input type="radio" id="bar" name="radio2"><span class="checkmark"></span></label>
+             <label class="container">At a friend's home <input type="radio" id="friendHome" name="radio2"><span class="checkmark"></span></label>
+            <label class="container">At some event <input type="radio" id="event" name="radio2"><span class="checkmark"></span></label>
+        </fieldset>
+        <fieldset>
+            <label for="pairing">What is your favorite food and wine pairing?
+                <textarea id="pairing" name="pairing" rows="3" cols="50"
+                    placeholder="I love filet mignon and Cabernet!"></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </div>
+    </form>
+</body>
+
+</html>
